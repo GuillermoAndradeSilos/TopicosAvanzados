@@ -1,0 +1,38 @@
+﻿<Window x:Class="TopicosAvanzados.Unidad1.Ejercicio9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopicosAvanzados.Unidad1"
+        mc:Ignorable="d"
+        Title="Ejercicio9" Height="450" Width="800">
+    <DockPanel>
+        <!-- Preguntarle despues a david pa ver como era el dise;o -->
+        <Grid DockPanel.Dock="Top" Background="Yellow">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock>WPF</TextBlock>
+            <TextBlock TextAlignment="Right" Grid.Column="2">2</TextBlock>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <Label>Abrir un elemento reciente</Label>
+                <Label>Archivo 1</Label>
+                <Label>Archivo 2</Label>
+                <Label>Archivo 3</Label>
+                <Label>Archivo 4</Label>
+                <Label>Archivo 5</Label>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Window>

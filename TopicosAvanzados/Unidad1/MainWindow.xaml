@@ -1,0 +1,45 @@
+﻿<Window x:Class="TopicosAvanzados.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopicosAvanzados"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <StackPanel DockPanel.Dock="Right" Height="auto">
+                <Button Height="50" Width="100">L</Button>
+                <Button Height="50" Width="100">M</Button>
+                <Button Height="50" Width="100">N</Button>
+                <Button Height="50" Width="100">O</Button>
+                <Button Height="50" Width="100">P</Button>
+            </StackPanel>
+            <Grid Width="auto" Height="auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Height="50" Grid.ColumnSpan="3">A</Button>
+                <Button Height="150" Grid.Row="1" Grid.Column="0">B</Button>
+                <Button Height="150" Grid.Row="1" Grid.Column="1">C</Button>
+                <Button Height="150" Grid.Row="1" Grid.Column="2">D</Button>
+                <Button Height="50" Grid.Row="2" Grid.ColumnSpan="3">E</Button>
+            </Grid>
+        </DockPanel>
+        <UniformGrid DockPanel.Dock="Bottom" Rows="3">
+            <Button>F</Button>
+            <Button>G</Button>
+            <Button>H</Button>
+            <Button>I</Button>
+            <Button>J</Button>
+            <Button>K</Button>
+        </UniformGrid>
+    </DockPanel>
+</Window>

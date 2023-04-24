@@ -1,0 +1,110 @@
+﻿<Window x:Class="TopicosAvanzados.Unidad1.Ejercicio10"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopicosAvanzados.Unidad1"
+        mc:Ignorable="d"
+        Title="Ejercicio10" Height="470" Width="450" MinHeight="450" MinWidth="450">
+    <Border BorderThickness="10,15,10,10">
+        <Border.BorderBrush>
+            <ImageBrush ImageSource="https://st.depositphotos.com/1852539/2673/i/950/depositphotos_26731875-stock-photo-translucent-glass-background.jpg"></ImageBrush>
+        </Border.BorderBrush>
+        <DockPanel>
+            <DockPanel.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="Foreground" Value="Blue"></Setter>
+                    <Setter Property="FontSize" Value="15"></Setter>
+                </Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="11"></Setter>
+                </Style>
+            </DockPanel.Resources>
+            <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Bottom">
+                <WrapPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Margin" Value="10,0,10,5"></Setter>
+                        <Setter Property="Padding" Value="4,1"></Setter>
+                    </Style>
+                </WrapPanel.Resources>
+                <CheckBox>Realizar esta acción para todos los confictos</CheckBox>
+                <Button>Omitir</Button>
+                <Button>Cancelar</Button>
+            </WrapPanel>
+            <Grid DockPanel.Dock="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <!--Lo de mero arriba-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label>Esta ubicación ya contiene un archivo con el mismo nombre.</Label>
+                    <TextBlock TextWrapping="Wrap" Grid.Row="1">Haga clic en el archivo que desea conservar</TextBlock>
+                </Grid>
+                <!-- Copiar y reemplazar -->
+                <Grid Margin="10" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label>Copiar y reemplazar</Label>
+                        <TextBlock Foreground="Blue" TextWrapping="Wrap" Grid.Row="1">Reemplazar el archivo en la carpeta de destino con el archivo que está copiando:</TextBlock>
+                    </Grid>
+                    <StackPanel Margin="0,5,0,0" HorizontalAlignment="Center" Grid.Row="1">
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Padding" Value="10,0"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Label Padding="10,0" FontWeight="Bold" Foreground="Black" FontSize="10">Documento Excel.xlsx</Label>
+                        <TextBlock Foreground="Blue">Documento Excel (D:\MiEquipo\Escritorio)</TextBlock>
+                        <TextBlock>Tamaño: 9.54KB</TextBlock>
+                        <TextBlock>Fecha de modificación: 05/12/2011 08:10 p.m.</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <!-- No copiar -->
+                <Grid Margin="10" Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label>No copiar</Label>
+                        <TextBlock Foreground="Blue" TextWrapping="Wrap" Grid.Row="1">No se cambiará ningún archivo. Conservar este archivo en la carpeta de destino:</TextBlock>
+                    </Grid>
+                    <StackPanel Margin="0,5,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+                        <StackPanel.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Padding" Value="10,0"></Setter>
+                            </Style>
+                        </StackPanel.Resources>
+                        <Label Padding="10,0" FontWeight="Bold" Foreground="Black" FontSize="10">Documento Excel.xlsx</Label>
+                        <TextBlock Foreground="Blue">Documento Excel (D:\MiEquipo\Escritorio)</TextBlock>
+                        <TextBlock>Tamaño: 9.54KB</TextBlock>
+                        <TextBlock>Fecha de modificación: 05/12/2011 08:10 p.m.</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <!-- Conservar cambios -->
+                <StackPanel Grid.Row="3">
+                    <Label>Copiar, pero conservar ambos archivos.</Label>
+                    <TextBlock Foreground="Blue" TextWrapping="Wrap">El nombre del archivo que está copiando se cambiará a "Documento Excel(2).xlsx"</TextBlock>
+                </StackPanel>
+            </Grid>
+        </DockPanel>
+    </Border>
+</Window>

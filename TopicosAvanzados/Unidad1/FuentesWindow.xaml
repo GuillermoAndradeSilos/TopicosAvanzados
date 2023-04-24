@@ -1,0 +1,104 @@
+﻿<Window x:Class="TopicosAvanzados.Unidad1.FuentesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TopicosAvanzados.Unidad1"
+        mc:Ignorable="d"
+        Title="FuentesWindow" Height="450" Width="800" Background="CadetBlue">
+    <DockPanel Margin="15">
+        <TextBlock Foreground="White" FontSize="30" DockPanel.Dock="Top">Selecciona fuente y estilo:</TextBlock>
+        <WrapPanel HorizontalAlignment="Right" DockPanel.Dock="Bottom">
+            <WrapPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="FontSize" Value="15"></Setter>
+                    <Setter Property="Margin" Value="0,0,10,5"></Setter>
+                    <Setter Property="Padding" Value="40,5"></Setter>
+                    <Setter Property="Background" Value="Transparent"></Setter>
+                    <Setter Property="Foreground" Value="White"></Setter>
+                    <Setter Property="BorderBrush" Value="White"></Setter>
+                </Style>
+            </WrapPanel.Resources>
+            <Button Background="DeepSkyBlue">OK</Button>
+            <Button>Cancelar</Button>
+        </WrapPanel>
+        <Grid DockPanel.Dock="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".3*"></ColumnDefinition>
+                <ColumnDefinition Width=".2*"></ColumnDefinition>
+                <ColumnDefinition Width=".1*"></ColumnDefinition>
+                <ColumnDefinition Width=".4*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ListBox>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Arial">Arial</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Comic Sans MS">Comic Sans MS</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Courier New">Courier New</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Georgia">Georgia</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Helveteica">Helveteica</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Impact">Impact</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Verdana">Verdana</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontFamily="Times New Roman">Times New Roman</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox Grid.Column="1">
+                <ListBoxItem>
+                    <TextBlock FontWeight="Normal">Normal</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontStyle="Italic">Cursiva</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontWeight="Bold">Negrita</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontWeight="Bold" FontStyle="Italic">Negrita Cursiva</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+            <ListBox Grid.Column="2">
+                <ListBoxItem>
+                    <TextBlock FontSize="8">8</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="10">10</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="12">12</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="14">14</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="16">16</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="18">18</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="20">20</TextBlock>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <TextBlock FontSize="24">24</TextBlock>
+                </ListBoxItem>
+            </ListBox>
+            <GroupBox Margin="10,0,0,0" Foreground="White" Grid.Column="3" Header="Vista previa:" BorderBrush="White" BorderThickness="1"
+                      Height="90" VerticalAlignment="Top">
+                <TextBlock Foreground="Black" FontSize="20" Background="White" Padding="80,10" VerticalAlignment="Center" HorizontalAlignment="Center">AaBbCcYyZz</TextBlock>
+            </GroupBox>
+        </Grid>
+    </DockPanel>
+</Window>
