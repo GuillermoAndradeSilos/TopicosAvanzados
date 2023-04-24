@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TopicosAvanzados.Unidad1"
         mc:Ignorable="d"
-        Title="Ejercicio1Layouts" Height="450" Width="800">
+        Title="Ejercicio1Layouts" Height="450" MinHeight="415" Width="800" MinWidth="280">
     <DockPanel Margin="5">
         <!-- Estilos -->
         <DockPanel.Resources>
@@ -84,7 +84,7 @@
                              VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" ></TextBox>
                 </Border>
                 <Border Background="Transparent" Grid.Row="4" Grid.Column="1" Padding="5">
-                    <ComboBox Margin="5" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="LightSlateGray" BorderThickness="1">
+                    <ComboBox x:Name="cmbGenero" Margin="5" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Background="Transparent" BorderBrush="LightSlateGray" BorderThickness="1">
                         <ComboBoxItem IsSelected="True" Background="Transparent">Seleccionar</ComboBoxItem>
                         <ComboBoxItem>Hombre</ComboBoxItem>
                         <ComboBoxItem>Mujer</ComboBoxItem>
