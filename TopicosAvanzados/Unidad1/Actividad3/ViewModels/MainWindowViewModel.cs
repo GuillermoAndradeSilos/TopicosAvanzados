@@ -21,7 +21,7 @@ Realiza un diseño de tu agrado.
 Se calificará: Diseño de la vista y funcionalidad del programa
 */
         //Numero aleatorio 1-5000
-        //pista indicando si el numero dado es mayor o menor
+        //pista indicando si el numero a adivinar es mayor o menor
         //si se adivina el juego termina
         //10 intentos
         public ICommand AdivinarCommand { get; set; }
@@ -82,7 +82,7 @@ Se calificará: Diseño de la vista y funcionalidad del programa
                     Pista = "Favor de escribir solamente números";
             else
             {
-                Pista = "Te quedaste sin intentos… pensé que este mensaje jamás saldría";
+                Pista = "Te quedaste sin intentos… pensé que este mensaje jamás saldría, yo también perdí :c";
                 VisibilidadReiniciar = "Visible";
             }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Pista)));
